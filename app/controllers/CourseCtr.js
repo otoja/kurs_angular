@@ -1,8 +1,17 @@
-app.controller('CourseController', function($scope){
+app.controller('CourseController', function($scope, $uibModal){
     $scope.test = 'Hello Kama ;)';
 
     $scope.openModal = function () {
-      alert ('ok');
+      $uibModal.open({
+        animation: true,
+        ariaLabelledBy: 'modal-title-bottom',
+        ariaDescribedBy: 'modal-body-bottom',
+        template: 'test',
+        size: 'sm',
+        controller: function($scope) {
+          $scope.name = 'bottom';  
+        }
+      });
     }
 });
 
