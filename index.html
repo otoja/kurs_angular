@@ -8,9 +8,19 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
     </head>
     <body ng-app="app">
-        <div ng-controller="CourseController">{{test}}</div>
+        <div ng-controller="CourseController">
+        
+            <input type="text" ng-model="test">
+            <button ng-click="openModal()">Show modal</button>
+        
+        </div>
     
+        
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap-tpls.js" type="text/javascript"></script>
+        
         <script src="app/scripts.js" type="text/javascript"></script>
         <script src="app/controllers/CourseCtr.js" type="text/javascript"></script>
     </body>
